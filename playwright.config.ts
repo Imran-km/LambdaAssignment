@@ -6,18 +6,19 @@ const config: PlaywrightTestConfig = {
   testDir: "tests",
   // testMatch: ["tests\loginTest.spec.ts"],
   timeout: 60000,
+  reporter: [['html', { outputFolder: 'reports' }]],
   use: {},
   projects: [
     // -- LambdaTest Config --
     // name in the format: browserName:browserVersion:platform@lambdatest
     // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
     // Use additional configuration options provided by Playwright if required: https://playwright.dev/docs/api/class-testconfig
-    {
-      name: "chrome:latest:MacOS Ventura@lambdatest",
-      use: {
-        viewport: { width: 1920, height: 1080 },
-      },
-    },
+    // {
+    //   name: "chrome:latest:MacOS Ventura@lambdatest",
+    //   use: {
+    //     viewport: { width: 1920, height: 1080 },
+    //   },
+    // },
     // {
     //   name: "chrome:latest:Windows 11@lambdatest",
     //   use: {

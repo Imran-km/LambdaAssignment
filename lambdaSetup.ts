@@ -12,8 +12,8 @@ const capabilities = {
   browserName: "Chrome", // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
   browserVersion: "latest",
   "LT:Options": {
-    platform: "Windows 10",
-    build: "Imran Playwright Build",
+    platform: process.env.HYPEREXECUTE_PLATFORM,
+    build: "Imran Lambda Build",
     name: "Playwright Test",
     user: process.env.LT_USERNAME,
     accessKey: process.env.LT_ACCESS_KEY,
