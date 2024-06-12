@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-# LambdaAssignment
-
->>>>>>> 5bc4591 (Added Tests for Lambda102)
 #Introduction
 Project to integrate Playwright typescript with Lambdatest service
 
@@ -25,8 +20,6 @@ Project to integrate Playwright typescript with Lambdatest service
 
 4. To Run playwright tests, use the below command
     npx playwright test
-<<<<<<< HEAD
-=======
 
 5. To install HyperExecute CLI, run the below commands
     wget https://downloads.lambdatest.com/hyperexecute/darwin/hyperexecute
@@ -37,4 +30,3 @@ Project to integrate Playwright typescript with Lambdatest service
 
 7. Run the below command to run the test suites against hyperexecute
     ./hyperexecute --user=$LT_USERNAME --key=$LT_ACCESS_KEY --config .autosplit.yaml --download-artifact --force-clean-artifacts
->>>>>>> 5bc4591 (Added Tests for Lambda102)
